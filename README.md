@@ -65,7 +65,7 @@ The channel mapping is then:
 
 	     	
 To change the channel mapping, update the function configureChannelMapping according to your needs:
-```
+```c
 void configureChannelMapping() {
     mode_mapping[YAW]      = CHANNEL4;
     mode_mapping[PITCH]    = CHANNEL2;
@@ -75,7 +75,7 @@ void configureChannelMapping() {
 ```
 ## 4.2 PID tuning
 The default PID coeffcient values might work for an F450-like quadcopter. However, you can tune them in the global variable declaration section:
-```
+```c
 // PID coefficients
 float Kp[3] = {4.0, 1.3, 1.3};    // P coefficients in that order : Yaw, Pitch, Roll
 float Ki[3] = {0.02, 0.04, 0.04}; // I coefficients in that order : Yaw, Pitch, Roll
@@ -118,7 +118,7 @@ To stop the quadcopter, move the left stick in the bottom right corner.
 
 # 7. Debug
 If you need to print debug messages, make sure to init Serial at 57600 bauds:
-```
+```c
 void setup() {
   Serial.begin(57600);
   // ...
