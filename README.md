@@ -7,6 +7,34 @@ Basically, this automation routine is an implementation of a digital PID with a 
 (i) Currently under active development.
 
 # 2. Mapping
+       +-------------------------+
+       |        MPU-6050         |
+       |                         |
+       | 3V3  SDA  SCL  GND  INT |
+       +--+----+----+----+----+--+
+          |    |    |    |
+          |    |    |    |
++---------+----+----+----+----------------+
+|        3.3V  A4   A5  GND               |
+|                                         |
+|                                         |
+|                 Arduino Uno             |
+|                                         |
+| #4   #5   #6   #7   #8   #9  #10   #11  |
++--+----+----+----+----+----+----+----+---+
+   |    |    |    |    |    |    |    |
+  (M1) (M2) (M3) (M4)  |    |    |    |
+                       |    |    |    |  
+                       |    |    |    |
+                    +--+----+----+----+---+
+                    | C1   C2   C3   C4   |
+                    |                     |
+                    |     RF Receiver     |
+                    +---------------------+
+  
+Legend:
+Mx: Motor X
+Cx: Receiver channel x
 The channel mapping is then:
 
 Channel	Command
