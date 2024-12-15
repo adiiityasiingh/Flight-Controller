@@ -1,4 +1,7 @@
 # Flight-Controller
+
+![IMG-20241208-WA0014](https://github.com/user-attachments/assets/1a0d5809-0d89-47df-b9db-349669224b2f)
+
 # 1. Introduction
 This Arduino sketch provides a flight controller for an X quadcopter based on an Arduino Uno board and the MPU6050 sensor.
 
