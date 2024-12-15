@@ -95,12 +95,14 @@ float Kd[3] = {0, 18, 18};        // D coefficients in that order : Yaw, Pitch, 
 - Motor 3: rear left - clockwise
 - Motor 4: rear left - counter-clockwise
 
-IMG
+![68747470733a2f2f7777772e666972656469792e66722f696d616765732f61727469636c65732f64726f6e65362f72656d6f74655f6d6f6465732e6a7067](https://github.com/user-attachments/assets/b657de5b-1e29-4744-a4d7-b99086c08ce2)
+
 
 - Left wing up implies a positive roll
 - Nose up implies a positive pitch
 - Nose right implies a positive yaw
-- The MPU6050 must be oriented as following:
+  <br><br>
+  The MPU6050 must be oriented as following:
 
 - X axis: roll
 - Y axis: pitch
@@ -110,6 +112,9 @@ IMG
 This sketch comes with a safety process: to start the quadcopter, move the left stick of the remote in the bottom left corner. Then move it back in center position.
 
 To stop the quadcopter, move the left stick in the bottom right corner.
+
+![start_stop](https://github.com/user-attachments/assets/4af27849-496e-4ba7-b603-0a56d5e5ade7)
+
 
 # 7. Debug
 If you need to print debug messages, make sure to init Serial at 57600 bauds:
