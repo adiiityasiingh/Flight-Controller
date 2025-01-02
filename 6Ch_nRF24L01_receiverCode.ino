@@ -1,12 +1,3 @@
-/*
- * This is a 6 channel nrf24l01 transmitter and receiver code.
- * There are 6 outputs in the receiver end, of which 2 outputs are for led(on/off) and the remaining 4 outputs are for 4 leds with brigtness control.
- * 
- * To know more refer the below links:
- *  https://youtu.be/Pd7rus79j_4
- *  https://dhirajkushwaha.com/elekkrypt
- *  
- */
 #include <SPI.h>
 #include <RF24.h>
 #include <nRF24L01.h>
